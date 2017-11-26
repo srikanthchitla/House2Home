@@ -50,10 +50,10 @@
               <a class="nav-link js-scroll-trigger" href="#team">What They Say</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Why us</a>
+              <a class="nav-link js-scroll-trigger" href="#why us">Why us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">FAQ</a>
+              <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
@@ -105,6 +105,13 @@
                                       </div>
                                   </div>
                                   <div class="form-group">
+                                   <label for="Cpassword" class="col-sm-5 control-label">
+                                       Confirm Password</label>
+                                   <div class="col-sm-10">
+                                       <input type="password" class="form-control" id="Cpassword" placeholder="Confirm Password" required="required" name="password"/>
+                                   </div>
+                               </div>
+                                  <div class="form-group">
                                       <label for="mobile" class="col-sm-3 control-label">
                                           Mobile</label>
                                       <div class="col-sm-10">
@@ -116,29 +123,20 @@
                                           Looking For</label>
                                       <div class="col-sm-10">
                                                   <select class="form-control" name="service_type">
-                                                  <option value=" ">select</option>
-    													<option value="interior Design" selected>Interior Design for House</option>
-    													<option value="cleaning" selected>Home Organizing-Clean</option>
-    													<option value="repairing" selected>Home Orgainzing-Repairing</option>
+                                                  <option value="select" selected>select</option>
+    													<option value="interior Design" >Interior Design for House</option>
+    													<option value="cleaning" >Home Organizing-Clean</option>
+    													<option value="repairing">Home Orgainzing-Repairing</option>
                                                   </select>
                                       </div>
                                   </div>
+  <p>By Clicking on 'Submit' button, you are agreeing to the House2Home <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
 
-                                  <div class="row">
-                                      <div class="col-sm-2">
-                                      </div>
-                                      <div class="col-sm-10"><br>
-                                          <button type="submit" class="btn btn-primary btn-sm">
-                                              Submit</button>
-                                          <button type="reset" class="btn btn-default btn-sm">
-                                              Cancel</button>
-                                      </div>
-                                  </div>
                                   </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
@@ -231,7 +229,7 @@
 
     <section id="services">
 
-<div class="container-fluid">
+<div class="container-fluid" style="margin-bottom: 30px;">
   <div class="row" style="margin: 0">
 <div class="col-md-8">
 <div class="row" style="margin: 0">
@@ -340,11 +338,13 @@
       </div>
   		</div>
 
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-      	<input type="submit" value="Submit" class="btn btn-success"/>
-      	<input type="reset" value="Clear" class="btn btn-default"/>
 
+    <div class="form-group">
+      <div class="col-sm-12 ">
+        <div class="pull-right">
+      	<input type="submit" value="Submit" class="btn btn-success"/>
+      	<input type="reset" value="Clear" class="btn btn-info"/>
+      </div>
       </div>
     </div>
 
@@ -388,26 +388,41 @@
     </section>
 
 
-    <div id="Howitworks">
+    <section id="Howitworks">
       <div class="container">
+          <h1 style="text-align: center">How It Works</h1>
         <div class="row">
           <div class="col-md-4">
-            <p>A home is a reflection of who you are! Find a design that meets your requirements and speaks to your sense of style & budget.</p>
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="img/howitwork/1.png" alt="Card image cap">
+              <div class="card-body">
+                <h4>Fall in love with our designs</h4>
+                <p class="card-text">A home is a reflection of who you are! Find a design that meets your requirements and speaks to your sense of style & budget.</p>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
-            <p>Our experts understand your requirements, help you make sense of your space and advice you on which materials and design are best suited to your style.</p>
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="img/howitwork/5.png" alt="Card image cap">
+              <div class="card-body">
+                <h4>Meet our experts,share your dreams</h4>
+                <p class="card-text">Our experts understand your requirements, help you make sense of your space and advice you on which materials and design are best suited to your style.</p>
+              </div>
+            </div>
           </div>
           <div class="col-md-4">
-            <p>You can know how exactly your space will look even before it is built, with our custom 3Ds. You now can visualise your space realistically. Uncertainty of the finished outcome is a thing of the past.</p>
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="img/howitwork/3.png" alt="Card image cap">
+              <div class="card-body">
+                <h4>See it come alive in 3d</h4>
+                <p class="card-text">You can know how exactly your space will look even before it is built, with our custom 3Ds. You now can visualise your space realistically. Uncertainty of the finished outcome is a thing of the past.</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <p>Select finishes, handles, hardware and much more all in one place. Here at Design Cafe we deliver quality that you can touch and trust.</p>
         </div>
       </div>
 
-    </div>
+    </section>
 
     <!-- Contact -->
     <section id="contact">
