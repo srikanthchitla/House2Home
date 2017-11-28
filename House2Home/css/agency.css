@@ -12,8 +12,8 @@ p {
 
 a {
   color: #146ee6; }
-  a:hover {
-    color: #fec503; }
+  /*a:hover {
+    color: #fec503; }*/
 
 .text-primary {
   color: #fed136 !important; }
