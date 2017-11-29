@@ -65,3 +65,8 @@ font-size: 17px;
  padding:4px 10px;
  list-style-type:none;   
 }
+
+.link{
+	cursor: pointer;
+	text-decoration: underline; 
+}
