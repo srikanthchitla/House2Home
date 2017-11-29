@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>House2Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,15 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <style type="text/css">
+      a:not([href]):not([tabindex]) {
+     color: inherit !important; 
+     text-decoration: underline !important; 
+}
+    </style>
+
+
   </head>
 
   <body id="page-top">
@@ -65,214 +74,6 @@
         </div>
       </div>
     </nav>
-
-    <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form  role="form" class="form-horizontal" action="userRegister" method="post" modelAttribute="customerreg">
-                    <div class="form-group row">
-                        <label for="fullname" class="col-sm-5 col-form-label">Full Name</label>
-                        <div class="col-sm-7">
-                            <input type="text" class="form-control" placeholder="Name" name="full_name" required="required" />
-                        </div>
-                    </div>
-
-                     <div class="form-group row">
-                        <label for="userName" class="col-sm-5 control-form-label">User Name</label>
-                        <div class="col-sm-7">
-                            <input type="text" class="form-control" id="userName" placeholder="User Name" name="user_name" required="required" maxlength="10"/>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="email" class="col-sm-5 control-form-label">
-                            Email</label>
-                        <div class="col-sm-7">
-                            <input type="email" class="form-control" id="email" placeholder="Email" required="required"  name="email"/>
-                        </div>
-                    </div>
-                       <div class="form-group row">
-                        <label for="password" class="col-sm-5 control-form-label">
-                            Password</label>
-                        <div class="col-sm-7">
-                            <input type="password" class="form-control" id="password" placeholder="Password" required="required" name="password"/>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                     <label for="Cpassword" class="col-sm-5 control-form-label">
-                         Confirm Password</label>
-                     <div class="col-sm-7">
-                         <input type="password" class="form-control" id="Cpassword" placeholder="Confirm Password" required="required" name="password"/>
-                     </div>
-                 </div>
-                    <div class="form-group row">
-                        <label for="mobile" class="col-sm-5 control-form-label">
-                            Mobile</label>
-                        <div class="col-sm-7">
-                            <input type="text" class="form-control" id="mobile" placeholder="Mobile" required="required" maxlength="10" name="phone"/>
-                        </div>
-                    </div>
-                        <div class="form-group row">
-                        <label for="lookingfor" class="col-sm-5 control-form-label">
-                            Looking For</label>
-                        <div class="col-sm-7">
-                <select class="form-control" name="service_type">
-                <option value="select" selected>select</option>
-								<option value="interior Design" >Interior Design for House</option>
-								<option value="cleaning" >Home Organizing-Clean</option>
-								<option value="repairing">Home Orgainzing-Repairing</option>
-                 </select>
-                        </div>
-                    </div>
-  <p>By Clicking on 'Submit' button, you are agreeing to the House2Home <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
-
-                                  </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="modal fade" id="forgotP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form  role="form" class="form-horizontal" action="userRegister" method="post" modelAttribute="customerreg">
-
-                    <div class="form-group row">
-                        <label for="email" class="col-sm-2 control-form-label">
-                            Email</label>
-                        <div class="col-sm-9">
-                            <input type="email" class="form-control" id="email" placeholder="Email" required="required"  name="email"/>
-                        </div>
-                    </div>
-                   </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary" data-toggle="modal"  data-target="#notify" data-dismiss="modal">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="modal fade" id="notify" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-           
-           <p> A temporary password has been sent to your registered email id. Please login using the temporary password. </p>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-bottom: 50px;">
-    <li class="nav-item nav-width">
-      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Customer Login</a>
-    </li>
-    <li class="nav-item nav-width">
-      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Employee Login</a>
-    </li>
-  </ul>
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-      <form role="form" class="form-horizontal">
-           <div class="form-group row">
-               <label for="email" class="col-sm-2 col-form-label">Email</label>
-               <div class="col-sm-10">
-                <input type="email" class="form-control" id="email1" placeholder="Email" required="required" />
-               </div>
-           </div>
-           <div class="form-group row">
-               <label for="exampleInputPassword" class="col-sm-2 col-form-label">Password</label>
-               <div class="col-sm-10">
-                  <input type="password" class="form-control" id="exampleInputPassword" placeholder="passowrd" required="required"/>
-               </div>
-           </div>
-           <div class="row">
-               <div class="col-sm-2">
-               </div>
-               <div class="col-sm-10">
-                   <button type="submit" class="btn btn-primary btn-sm">Login</button>
-                   <a href="#" data-toggle="modal"  data-target="#forgotP" data-dismiss="modal">Forgot your password?</a>
-                   <a htef="#" data-toggle="modal"  data-target="#registration" data-dismiss="modal" class="pull-right link">New User?</a>
-
-
-               </div>
-           </div>
-           </form>
-      </div>
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <form role="form" class="form-horizontal">
-          <div class="form-group row">
-              <label for="email" class="col-sm-2 col-form-label">Email</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="email1" placeholder="Email" required="required" />
-              </div>
-          </div>
-          <div class="form-group row">
-              <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Password</label>
-              <div class="col-sm-10">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="passowrd" required="required"/>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-sm-2">
-              </div>
-              <div class="col-sm-10">
-                  <button type="submit" class="btn btn-primary btn-sm">Login</button>
-                  
-              </div>
-          </div>
-          </form>
-    </div>
-  </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
 
     <div id="services" style="margin-top: 140px;">
 
@@ -629,10 +430,10 @@ A reason people houseclean is to be able to see parts of the floor and furniture
             <div class="pull-left">
              <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
+                <a href="terms&conditions.html" target="_blank">Privacy Policy</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">Terms & Conditions</a>
+                <a href="terms&conditions.html" target="_blank">Terms & Conditions</a>
               </li>
             </ul>
             <span class="copyright">Copyright &copy; by House2Home. All rights are reserved.</span>
@@ -674,211 +475,218 @@ A reason people houseclean is to be able to see parts of the floor and furniture
       </div>
     </footer>
 
+
+    <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form  role="form" class="form-horizontal" action="userRegister" method="post" modelAttribute="customerreg">
+                    <div class="form-group row">
+                        <label for="fullname" class="col-sm-5 col-form-label">Full Name</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" placeholder="Name" name="full_name" required="required" />
+                        </div>
+                    </div>
+
+                     <div class="form-group row">
+                        <label for="userName" class="col-sm-5 control-form-label">User Name</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="userName" placeholder="User Name" name="user_name" required="required" maxlength="10"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-5 control-form-label">
+                            Email</label>
+                        <div class="col-sm-7">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required="required"  name="email"/>
+                        </div>
+                    </div>
+                       <div class="form-group row">
+                        <label for="password" class="col-sm-5 control-form-label">
+                            Password</label>
+                        <div class="col-sm-7">
+                            <input type="password" class="form-control" id="password" placeholder="Password" required="required" name="password"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                     <label for="Cpassword" class="col-sm-5 control-form-label">
+                         Confirm Password</label>
+                     <div class="col-sm-7">
+                         <input type="password" class="form-control" id="Cpassword" placeholder="Confirm Password" required="required" name="password"/>
+                     </div>
+                 </div>
+                    <div class="form-group row">
+                        <label for="mobile" class="col-sm-5 control-form-label">
+                            Mobile</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control" id="mobile" placeholder="Mobile" required="required" maxlength="10" name="phone"/>
+                        </div>
+                    </div>
+                        <div class="form-group row">
+                        <label for="lookingfor" class="col-sm-5 control-form-label">
+                            Looking For</label>
+                        <div class="col-sm-7">
+                <select class="form-control" name="service_type">
+                <option value="select" selected>select</option>
+                <option value="interior Design" >Interior Design for House</option>
+                <option value="cleaning" >Home Organizing-Clean</option>
+                <option value="repairing">Home Orgainzing-Repairing</option>
+                 </select>
+                        </div>
+                    </div>
+  <p>By Clicking on 'Submit' button, you are agreeing to the House2Home <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+
+                                  </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="modal fade" id="forgotP" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form  role="form" class="form-horizontal" action="userRegister" method="post" modelAttribute="customerreg">
+
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 control-form-label">
+                            Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required="required"  name="email"/>
+                        </div>
+                    </div>
+                   </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" data-toggle="modal"  data-target="#notify" data-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="notify" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           
+           <p> A temporary password has been sent to your registered email id. Please login using the temporary password. </p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-bottom: 50px;">
+                <li class="nav-item nav-width">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Customer Login</a>
+                </li>
+              <li class="nav-item nav-width">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Employee Login</a>
+              </li>
+            </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+      <form role="form" class="form-horizontal">
+           <div class="form-group row">
+               <label for="email" class="col-sm-2 col-form-label">Email</label>
+               <div class="col-sm-10">
+                <input type="email" class="form-control" id="email1" placeholder="Email" required="required" />
+               </div>
+           </div>
+           <div class="form-group row">
+               <label for="exampleInputPassword" class="col-sm-2 col-form-label">Password</label>
+               <div class="col-sm-10">
+                  <input type="password" class="form-control" id="exampleInputPassword" placeholder="passowrd" required="required"/>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-sm-2">
+               </div>
+               <div class="col-sm-10">
+                   <button type="submit" class="btn btn-primary btn-sm">Login</button>
+                   <a href="#" data-toggle="modal"  data-target="#forgotP" data-dismiss="modal">Forgot your password?</a>
+                   <a htef="#" data-toggle="modal"  data-target="#registration" data-dismiss="modal" class="pull-right link">New User?</a>
+
+
+               </div>
+           </div>
+           </form>
+      </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <form role="form" class="form-horizontal">
+          <div class="form-group row">
+              <label for="email" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email1" placeholder="Email" required="required" />
+              </div>
+          </div>
+          <div class="form-group row">
+              <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Password</label>
+              <div class="col-sm-10">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="passowrd" required="required"/>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-2">
+              </div>
+              <div class="col-sm-10">
+                  <button type="submit" class="btn btn-primary btn-sm">Login</button>
+                  
+              </div>
+          </div>
+          </form>
+    </div>
+  </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+
     <!-- Portfolio Modals -->
-
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -894,6 +702,17 @@ A reason people houseclean is to be able to see parts of the floor and furniture
     <!-- Custom scripts for this template -->
     <script src="js/agency.js"></script>
      <script src="js/jquery.js"></script>
+
+     <script type="text/javascript">
+    $('#registration').on('hidden.bs.modal', function () {
+    $(this).find('form').trigger('reset');
+});
+    $('#login').on('hidden.bs.modal', function () {
+    $('#home-tab').addClass('active');
+    $('#profile-tab').removeClass('active');
+    $(this).find('form').trigger('reset');
+});
+     </script>
 
   </body>
 
