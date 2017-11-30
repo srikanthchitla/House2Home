@@ -26,10 +26,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <style type="text/css">
-      a:not([href]):not([tabindex]) {
-     color: inherit !important; 
-     text-decoration: underline !important; 
-}
+    
     </style>
 
 
@@ -122,31 +119,39 @@
 <!-- <div class="col-md-1"></div> -->
 <div class="col-md-3 shadow">
   	<div class="breadcrumb">Get Custom Quote</div>
-  	<form action="register" method="post"  modelAttribute="customData" class="form-horizontal">
+  	<form id="data" modelAttribute="customData" class="form-horizontal" novalidate>
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">Name</label>
         <div class="col-sm-7">
-  			<input type="text" class="form-control" name="name" value="" required="required"  onkeyup="lengthRange(this) "/>
+  			<input type="text" class="form-control" name="name" value="" required="required" required data-validation-required-message="Please enter your name.">
+          
       </div>
+      <span class="help-block text-danger"></span>
   		</div>
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">Email</label>
           <div class="col-sm-7">
-  			<input type="email" class="form-control" name="email" onchange="email_validate(this.value);" value="" required="required"  />
+  			<input type="email" class="form-control" name="email" value="" required data-validation-required-message="Please enter your Email.">
+                    
       </div>
+      <span class="help-block text-danger"></span>
   		</div>
 
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">Mobile</label>
           <div class="col-sm-7">
-  			<input type="number" class="form-control" name="phone" value="" maxlength="10" onkeyup="validatephone(this);" required="required"/>
+  			<input type="number" class="form-control" name="phone" value="" maxlength="10" required data-validation-required-message="Please enter your Mobile number.">
+                    
       </div>
+      <span class="help-block text-danger"></span>
   		</div>
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">City</label>
           <div class="col-sm-7">
-  			<input type="text" class="form-control" name="city" value="" required="required" />
+  			<input type="text" class="form-control" name="city" value="" required data-validation-required-message="Please enter your City.">
+                   
       </div>
+      <p class="help-block text-danger"></p>
   		</div>
 
 
@@ -193,7 +198,7 @@
     <div class="form-group">
       <div class="col-sm-12 ">
         <div class="pull-right">
-      	<input type="submit" value="Submit" class="btn btn-success"/>
+      	<input type="submit" value="Submit" class="btn btn-success" id="submit-quote" />
       	<input type="reset" value="Clear" class="btn btn-info"/>
       </div>
       </div>
@@ -486,46 +491,52 @@ A reason people houseclean is to be able to see parts of the floor and furniture
             </button>
           </div>
           <div class="modal-body">
-            <form  role="form" class="form-horizontal" action="userRegister" method="post" modelAttribute="customerreg">
+            <form  role="form" class="form-horizontal" action="userRegister" method="post" modelAttribute="customerreg" id="reg-validation" novalidate>
                     <div class="form-group row">
                         <label for="fullname" class="col-sm-5 col-form-label">Full Name</label>
                         <div class="col-sm-7">
-                            <input type="text" class="form-control" placeholder="Name" name="full_name" required="required" />
+                            <input type="text" class="form-control" placeholder="Name" name="full_name" required data-validation-required-message="Please enter your fullname."/>
+                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
 
                      <div class="form-group row">
                         <label for="userName" class="col-sm-5 control-form-label">User Name</label>
                         <div class="col-sm-7">
-                            <input type="text" class="form-control" id="userName" placeholder="User Name" name="user_name" required="required" maxlength="10"/>
+                            <input type="text" class="form-control" id="userName" placeholder="User Name" name="user_name" maxlength="10" required data-validation-required-message="Please enter your username."/>
+                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="email" class="col-sm-5 control-form-label">
                             Email</label>
                         <div class="col-sm-7">
-                            <input type="email" class="form-control" id="email" placeholder="Email" required="required"  name="email"/>
+                            <input type="email" class="form-control" id="email" placeholder="Email" name="email" required data-validation-required-message="Please enter Email"/>
+                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
                        <div class="form-group row">
                         <label for="password" class="col-sm-5 control-form-label">
                             Password</label>
                         <div class="col-sm-7">
-                            <input type="password" class="form-control" id="password" placeholder="Password" required="required" name="password"/>
+                            <input type="password" class="form-control" id="password" placeholder="Password" name="password" required data-validation-required-message="Please enter your password"/>
+                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="form-group row">
                      <label for="Cpassword" class="col-sm-5 control-form-label">
                          Confirm Password</label>
                      <div class="col-sm-7">
-                         <input type="password" class="form-control" id="Cpassword" placeholder="Confirm Password" required="required" name="password"/>
+                         <input type="password" class="form-control" id="Cpassword" placeholder="Confirm Password" name="password" required data-validation-required-message="Please enter your confrim password"/>
+                         <p class="help-block text-danger"></p>
                      </div>
                  </div>
                     <div class="form-group row">
                         <label for="mobile" class="col-sm-5 control-form-label">
                             Mobile</label>
                         <div class="col-sm-7">
-                            <input type="text" class="form-control" id="mobile" placeholder="Mobile" required="required" maxlength="10" name="phone"/>
+                            <input type="text" class="form-control" id="mobile" placeholder="Mobile"  maxlength="10" name="phone" required data-validation-required-message="Please enter your mobile number"/>
+                            <p class="help-block text-danger"></p>
                         </div>
                     </div>
                         <div class="form-group row">
@@ -629,9 +640,9 @@ A reason people houseclean is to be able to see parts of the floor and furniture
 
       <form role="form" class="form-horizontal">
            <div class="form-group row">
-               <label for="email" class="col-sm-2 col-form-label">Email</label>
+               <label for="user" class="col-sm-2 col-form-label">Username</label>
                <div class="col-sm-10">
-                <input type="email" class="form-control" id="email1" placeholder="Email" required="required" />
+                <input type="text" class="form-control" id="username" placeholder="Username" required="required" />
                </div>
            </div>
            <div class="form-group row">
@@ -641,14 +652,10 @@ A reason people houseclean is to be able to see parts of the floor and furniture
                </div>
            </div>
            <div class="row">
-               <div class="col-sm-2">
-               </div>
                <div class="col-sm-10">
                    <button type="submit" class="btn btn-primary btn-sm">Login</button>
                    <a href="#" data-toggle="modal"  data-target="#forgotP" data-dismiss="modal">Forgot your password?</a>
                    <a htef="#" data-toggle="modal"  data-target="#registration" data-dismiss="modal" class="pull-right link">New User?</a>
-
-
                </div>
            </div>
            </form>
@@ -656,9 +663,9 @@ A reason people houseclean is to be able to see parts of the floor and furniture
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
       <form role="form" class="form-horizontal">
           <div class="form-group row">
-              <label for="email" class="col-sm-2 col-form-label">Email</label>
+              <label for="user" class="col-sm-2 col-form-label">Username</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="email1" placeholder="Email" required="required" />
+                <input type="text" class="form-control" id="email1" placeholder="Username" required="required" />
               </div>
           </div>
           <div class="form-group row">
@@ -708,10 +715,15 @@ A reason people houseclean is to be able to see parts of the floor and furniture
     $(this).find('form').trigger('reset');
 });
     $('#login').on('hidden.bs.modal', function () {
+    $('#home').addClass('active');
+    $('#profile').removeClass('active');
     $('#home-tab').addClass('active');
     $('#profile-tab').removeClass('active');
+    $('#home').addClass('show');
+    $('#profile').removeClass('show');
     $(this).find('form').trigger('reset');
 });
+
      </script>
 
   </body>

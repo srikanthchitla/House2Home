@@ -26,8 +26,9 @@
         
         $('#back-to-top').tooltip('show');
 
-
-       
-
+        $('#submit-quote').on('click', function(){
+        	('.form-group').css("margin-bottom",0);
+        
+        });
 });
 

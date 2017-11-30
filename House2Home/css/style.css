@@ -83,3 +83,7 @@ font-size: 17px;
      color: lightslategrey !important; 
      text-decoration: underline !important; 
 }
+
+.error {
+	margin-bottom: 0;
+}
