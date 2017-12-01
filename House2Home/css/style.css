@@ -88,7 +88,7 @@ font-size: 17px;
 	margin-bottom: 0;
 }
 .div-background{
-    background-image: url(../img/login_bg.jpg);
+    background-image: url(../img/wts1.png);
     top: 0;
     left: 0;
     right: 0;
@@ -97,4 +97,10 @@ font-size: 17px;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.nav-link.p.active {
+    color: #fff;
+    background-color: #4aab91;
+    border-color: #ddd #ddd #fff;
 }

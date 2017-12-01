@@ -16,6 +16,7 @@
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+    <link rel="icon" type="image/png" href='img/home_icon.png'>
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
@@ -119,10 +120,11 @@
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">Name</label>
         <div class="col-sm-7">
-  			<input type="text" class="form-control" name="name" value="" required data-validation-required-message="Please enter your name.">
+  			<input type="text" class="form-control" id="testname" name="name" value="" required data-validation-required-message="Please enter your name." onkeypress="myfunc()">
           
       </div>
       <span class="help-block text-danger"></span>
+      <p id="demos"></p>
   		</div>
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">Email</label>
@@ -136,7 +138,7 @@
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">Mobile</label>
           <div class="col-sm-7">
-  			<input type="number" class="form-control" name="phone" value="" maxlength="10" required data-validation-required-message="Please enter your Mobile number.">
+  			<input type="number" class="form-control" name="phone" value="" minlength="10" maxlength="10" required data-validation-required-message="Please enter your Mobile number.">
                     
       </div>
       <span class="help-block text-danger"></span>
@@ -154,20 +156,21 @@
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">Looking For</label>
         <div class="col-sm-7">
-  			<select name="service_type" class="form-control">
-  				<option>select here</option>
+  			<select class="form-control" required>
+  				<option value="">select here</option>
   				<option value="interiorDesign">Interior Design for House</option>
   				<option value="repair">Home Organizing-Repair</option>
   				<option value="clean">Home Organizing-Cleaning</option>
   			</select>
       </div>
+      <p class="help-block text-danger"></p>
   		</div>
 
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">House Type</label>
         <div class="col-sm-7">
-  			<select name="service_type" class="form-control">
-  				<option>select here</option>
+  			<select class="form-control" required >
+  				<option value="">select here</option>
   				<option value="1bhk">1BHK</option>
   				<option value="2bhk">2BHK</option>
   				<option value="3bhk">3BHK</option>
@@ -175,12 +178,13 @@
           <option value="other">Other</option>
   			</select>
       </div>
+      <p class="help-block text-danger"></p>
   		</div>
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">Budget</label>
         <div class="col-sm-7">
-  			<select name="service_type" class="form-control">
-  				<option>select here</option>
+  			<select name="service_type" class="form-control" required >
+  				<option value="">select here</option>
   				<option value="dmatter">Does not matter</option>
   				<option value="1lack"> >5 Lac</option>
   				<option value="2lack"> 5 - 10 lac</option>
@@ -188,6 +192,7 @@
           <option value="4lack"> 15+ lac</option>
   			</select>
       </div>
+      <p class="help-block text-danger"></p>
   		</div>
 
 
@@ -195,7 +200,7 @@
       <div class="col-sm-12 ">
         <div class="pull-right">
       	<input type="submit" value="Submit" class="btn btn-success" id="submit-quote" />
-      	<input type="reset" value="Clear" class="btn btn-info"/>
+      	<input type="reset" value="Clear" class="btn btn-info" id="clear" />
       </div>
       </div>
     </div>
@@ -245,7 +250,7 @@
     </div>
 
 
-    <div id="Howitworks" style="padding: 100px 0;">
+    <div id="Howitworks" style="padding: 50px 0;">
       <div class="container">
           <h4 style="text-align: center"><span style="color: ">How</span> It Works</h4>
           <hr class="underline">
@@ -282,17 +287,12 @@
 
     </div>
 
-    <div id="ourServices" style="padding: 100px 0;">
+    <div id="ourServices" style="padding: 50px 0;">
       <div class="container">
         <h4 style="text-align: center">Our Services</h4>
         <hr class="underline">
         <h5><strong>Interior Designs</strong></h5>
         <p>Interior design is not just about the looks of the building’s interior. Well, it is but it also plays the key role in its functionality because even the largest house can lack space if having a poor interior design, while a tiny apartment can be transformed into a cosy residence with enough space for just about everything with the right design and the use of a contemporary staircase. Yes, interior design is much more important than it may seem at a first glance and can be easily compared with the importance of architecture, at least when it comes to interior. Hiring an interior designer is therefore more than just a good idea if building a new house or remodelling/renovating the existing one.</p>
-
-       <!--  <p>
-          he house’s interior must be aesthetically appealing and practical at the same time. However, what is aesthetically appealing such as a beautiful Blinds or great looking modern boiler stoves depends greatly on whom you ask because everyone has different needs and lifestyle. As a result, the standard architectural plans rarely meet the client’s needs completely. With an aim to save money for an interior designer and modifications of the architect’s plan, many people make the crucial mistake by accepting the offered plan even if they would prefer for the toilet to be separated from your bathroom or perhaps create a smaller living room to gain enough space for a home office for example. And when they realize that they are serving the house instead of vice versa, they spend even more money for alterations than they would if hiring an interior designer when starting the project.
-        </p> -->
-
         <p>
           It is often difficult to decide which interior design meets your needs and lifestyle the most because most designs usually do not show the need for improvements or alterations until you are actually using them. However, an interior designer will help you avoid finding yourself with a newly built or renovated house that could have been done better because all interior designers are trained to help their clients choose a design according to their lifestyle. But they do not only take care of the layout but they also help you choose the right decor, lightning, paint colour, etc. depending on what you want to leave over to an expert and how much you can afford to spend on the project.
 Unfortunately, the best interior designers are not inexpensive but it is far more expensive to tear down the walls or build new ones a year or two after completion of the project. House2Home is here to make this statement false as we are the best interior designers and doing
@@ -310,21 +310,66 @@ A reason people houseclean is to be able to see parts of the floor and furniture
     </div>
 
 
-    <div id="whatTheySay" style="padding: 100px 0;">
+    <div id="whatTheySay" style="padding: 50px 0;">
       <h4 style="text-align: center">What They Say</h4>
         <hr class="underline">
+        <div class="div-background" style="padding: 40px;">
         <div class="container">
-          <div class="div-background">
-              
+            <div id="aboutsay" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                     <center>
+            <img src="img/sri.jpg" class="img-responsive img-circle" style="border-radius: 50%; width: 150px;">
+            <p style="color: #fff;">Srikanth Chitla, <span>Nov 19</span></p>
+
+           
+              <p style="color: #fff;">I wanted to let you know how awesome Mary and Kathryn are! Honestly hiring a professional organizer was probably one of the better investments I have made in a long time. I like to think I am savvy and able to work through most any issues but Mary visualized my space in ways I would have never dreamed of. She is a master at her craft! I recently took my niece in and have been wanting to make a little area for her but in a 1000 sq ft condominium with 3 people and a dog I was at my wits end. I have a newfound appreciation for “organizing” as an art form. What a way to start the new year! Thank you so much, House2Home Team!!!!</p>
+               </center>
+                  </div>
+                  <div class="carousel-item">
+                      <center>
+            <img src="img/srikanth.png" class="img-responsive img-circle" style="border-radius: 50%; width: 150px;">
+            <p style="color: #fff;">Srikanth Chitla, <span>Nov 19</span></p>
+
+           
+              <p style="color: #fff;">I wanted to let you know how awesome Mary and Kathryn are! Honestly hiring a professional organizer was probably one of the better investments I have made in a long time. I like to think I am savvy and able to work through most any issues but Mary visualized my space in ways I would have never dreamed of. She is a master at her craft! I recently took my niece in and have been wanting to make a little area for her but in a 1000 sq ft condominium with 3 people and a dog I was at my wits end. I have a newfound appreciation for “organizing” as an art form. What a way to start the new year! Thank you so much, House2Home Team!!!!</p>
+               </center>
+                  </div>
+                  <a class="carousel-control-prev" href="#aboutsay" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#aboutsay" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+                </div>
+              </div>
+
+
+
           </div>
         </div>
       
     </div>
 
 
+<div id="whyUs" style="padding: 50px 0;">
+   <h4 style="text-align: center">Why Us</h4>
+    <hr class="underline">
+    <div class="container">
+              <h5><strong>Interior Designs</strong></h5>
+        <p>Interior design is not just about the looks of the building’s interior. Well, it is but it also plays the key role in its functionality because even the largest house can lack space if having a poor interior design, while a tiny apartment can be transformed into a cosy residence with enough space for just about everything with the right design and the use of a contemporary staircase. Yes, interior design is much more important than it may seem at a first glance and can be easily compared with the importance of architecture, at least when it comes to interior. Hiring an interior designer is therefore more than just a good idea if building a new house or remodelling/renovating the existing one.</p>
+        <p>
+          It is often difficult to decide which interior design meets your needs and lifestyle the most because most designs usually do not show the need for improvements or alterations until you are actually using them. However, an interior designer will help you avoid finding yourself with a newly built or renovated house that could have been done better because all interior designers are trained to help their clients choose a design according to their lifestyle. But they do not only take care of the layout but they also help you choose the right decor, lightning, paint colour, etc. depending on what you want to leave over to an expert and how much you can afford to spend on the project.
+Unfortunately, the best interior designers are not inexpensive but it is far more expensive to tear down the walls or build new ones a year or two after completion of the project. House2Home is here to make this statement false as we are the best interior designers and doing
+this at low prices. 
+        </p>
+    </div>
+</div>
 
 
-<div id="faq" style="padding: 100px 0;">
+<div id="faq" style="padding: 50px 0;">
       <h4 style="text-align: center">FAQ</h4>
         <hr class="underline">
 <div class="container">   
@@ -379,7 +424,6 @@ A reason people houseclean is to be able to see parts of the floor and furniture
         <li><div class="small_circle faq-hand"><i class="fa fa1 fa-hand-o-right"></i></div><div class="line">What are your hours of operation?<span class="plus"> + </span> <span class="minus"> - </span></div></li>
               <div  class="pane">
                We realize that every client has a different lifestyle with a different schedule so it is not the typical 9-5 company. House2Home!! revolves around their clients’ schedules to offer the best customer service possible. Whether you’re a night owl, morning person or need to focus on organizing in the afternoon, House2Home!! is here to accommodate your schedule!
-
                </div>
                
               </ul>
@@ -548,7 +592,7 @@ A reason people houseclean is to be able to see parts of the floor and furniture
                         <label for="mobile" class="col-sm-5 control-form-label">
                             Mobile</label>
                         <div class="col-sm-7">
-                            <input type="text" class="form-control" id="mobile" placeholder="Mobile"  maxlength="10" name="phone" required data-validation-required-message="Please enter your mobile number"/>
+                            <input type="number" class="form-control" id="mobile" placeholder="Mobile" minlength="10" maxlength="10" name="phone" required data-validation-required-message="Please enter your mobile number"/>
                             
                         </div>
                         <p class="help-block text-danger"></p>
@@ -565,7 +609,7 @@ A reason people houseclean is to be able to see parts of the floor and furniture
                  </select>
                         </div>
                     </div>
-  <p>By Clicking on 'Submit' button, you are agreeing to the House2Home <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+  <p>By Clicking on 'Submit' button, you are agreeing to the House2Home <a href="terms-conditions.html" target="_blank">Terms & Conditions</a> and <a href="terms-conditions.html" target="_blank">Privacy Policy</a>.</p>
    <div class="modal-footer">
            <input type="submit" value="Submit" class="btn btn-success" id="registration" />
            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -644,27 +688,29 @@ A reason people houseclean is to be able to see parts of the floor and furniture
           <div class="modal-body">
             <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-bottom: 50px;">
                 <li class="nav-item nav-width">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Customer Login</a>
+                  <a class="nav-link p active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Customer Login</a>
                 </li>
               <li class="nav-item nav-width">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Employee Login</a>
+                <a class="nav-link p" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Employee Login</a>
               </li>
             </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-      <form role="form" class="form-horizontal">
+      <form role="form" class="form-horizontal" id="user-login-validation" novalidate>
            <div class="form-group row">
                <label for="user" class="col-sm-2 col-form-label">Username</label>
                <div class="col-sm-10">
-                <input type="text" class="form-control" id="username" placeholder="Username" required="required" />
+                <input type="text" class="form-control" id="username" placeholder="Username" required data-validation-required-message="Please enter Username" />
                </div>
+               <p class="help-block text-danger"></p>
            </div>
            <div class="form-group row">
                <label for="exampleInputPassword" class="col-sm-2 col-form-label">Password</label>
                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="exampleInputPassword" placeholder="passowrd" required="required"/>
+                  <input type="password" class="form-control" id="exampleInputPassword" placeholder="passowrd" required data-validation-required-message="Please enter Password"/>
                </div>
+               <p class="help-block text-danger"></p>
            </div>
            <div class="row">
                <div class="col-sm-10">
@@ -676,18 +722,20 @@ A reason people houseclean is to be able to see parts of the floor and furniture
            </form>
       </div>
     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-      <form role="form" class="form-horizontal">
+      <form role="form" class="form-horizontal" id="emp-login-validation" novalidate>
           <div class="form-group row">
               <label for="user" class="col-sm-2 col-form-label">Username</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="email1" placeholder="Username" required="required" />
+                <input type="text" class="form-control" id="email1" placeholder="Username" required data-validation-required-message="Please enter Username"/>
               </div>
+              <p class="help-block text-danger"></p>
           </div>
           <div class="form-group row">
               <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Password</label>
               <div class="col-sm-10">
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="passowrd" required="required"/>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="passowrd" required data-validation-required-message="Please enter Passowrd" />
               </div>
+              <p class="help-block text-danger"></p>
           </div>
           <div class="row">
               <div class="col-sm-2">
@@ -727,10 +775,14 @@ A reason people houseclean is to be able to see parts of the floor and furniture
 
      <script type="text/javascript">
     $('#registration').on('hidden.bs.modal', function () {
+    $('p ul').hide();
+    $('.form-group').removeClass('error');
     $(this).find('form').trigger('reset');
 });
     $('#login').on('hidden.bs.modal', function () {
     $('#home').addClass('active');
+    $('p ul').hide();
+    $('.form-group').removeClass('error');
     $('#profile').removeClass('active');
     $('#home-tab').addClass('active');
     $('#profile-tab').removeClass('active');
@@ -738,6 +790,17 @@ A reason people houseclean is to be able to see parts of the floor and furniture
     $('#profile').removeClass('show');
     $(this).find('form').trigger('reset');
 });
+
+    $('#clear').on('click',function(){
+    $('p ul').hide();
+    $('span ul').hide();
+    $('.form-group').removeClass('error');
+    });
+function myfunc(){
+    var x = document.getElementById('testname').value;
+    document.getElementById('demos').innerHTML = x;
+}
+    
 
      </script>
 
