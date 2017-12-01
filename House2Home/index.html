@@ -16,10 +16,6 @@
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'> -->
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
@@ -123,7 +119,7 @@
   		<div class="form-group row">
   			<label for="name" class="col-form-label col-sm-5">Name</label>
         <div class="col-sm-7">
-  			<input type="text" class="form-control" name="name" value="" required="required" required data-validation-required-message="Please enter your name.">
+  			<input type="text" class="form-control" name="name" value="" required data-validation-required-message="Please enter your name.">
           
       </div>
       <span class="help-block text-danger"></span>
@@ -314,6 +310,18 @@ A reason people houseclean is to be able to see parts of the floor and furniture
     </div>
 
 
+    <div id="whatTheySay" style="padding: 100px 0;">
+      <h4 style="text-align: center">What They Say</h4>
+        <hr class="underline">
+        <div class="container">
+          <div class="div-background">
+              
+          </div>
+        </div>
+      
+    </div>
+
+
 
 
 <div id="faq" style="padding: 100px 0;">
@@ -491,53 +499,59 @@ A reason people houseclean is to be able to see parts of the floor and furniture
             </button>
           </div>
           <div class="modal-body">
-            <form  role="form" class="form-horizontal" action="userRegister" method="post" modelAttribute="customerreg" id="reg-validation" novalidate>
+            <form id="reg-validation" role="form" class="form-horizontal"  method="post"  novalidate>
                     <div class="form-group row">
                         <label for="fullname" class="col-sm-5 col-form-label">Full Name</label>
                         <div class="col-sm-7">
                             <input type="text" class="form-control" placeholder="Name" name="full_name" required data-validation-required-message="Please enter your fullname."/>
-                            <p class="help-block text-danger"></p>
+                           
                         </div>
+                         <p class="help-block text-danger"></p>
                     </div>
 
                      <div class="form-group row">
                         <label for="userName" class="col-sm-5 control-form-label">User Name</label>
                         <div class="col-sm-7">
                             <input type="text" class="form-control" id="userName" placeholder="User Name" name="user_name" maxlength="10" required data-validation-required-message="Please enter your username."/>
-                            <p class="help-block text-danger"></p>
+                            
                         </div>
+                        <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group row">
                         <label for="email" class="col-sm-5 control-form-label">
                             Email</label>
                         <div class="col-sm-7">
                             <input type="email" class="form-control" id="email" placeholder="Email" name="email" required data-validation-required-message="Please enter Email"/>
-                            <p class="help-block text-danger"></p>
+                            
                         </div>
+                        <p class="help-block text-danger"></p>
                     </div>
                        <div class="form-group row">
                         <label for="password" class="col-sm-5 control-form-label">
                             Password</label>
                         <div class="col-sm-7">
                             <input type="password" class="form-control" id="password" placeholder="Password" name="password" required data-validation-required-message="Please enter your password"/>
-                            <p class="help-block text-danger"></p>
+                            
                         </div>
+                        <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group row">
                      <label for="Cpassword" class="col-sm-5 control-form-label">
                          Confirm Password</label>
                      <div class="col-sm-7">
                          <input type="password" class="form-control" id="Cpassword" placeholder="Confirm Password" name="password" required data-validation-required-message="Please enter your confrim password"/>
-                         <p class="help-block text-danger"></p>
+                         
                      </div>
+                     <p class="help-block text-danger"></p>
                  </div>
                     <div class="form-group row">
                         <label for="mobile" class="col-sm-5 control-form-label">
                             Mobile</label>
                         <div class="col-sm-7">
                             <input type="text" class="form-control" id="mobile" placeholder="Mobile"  maxlength="10" name="phone" required data-validation-required-message="Please enter your mobile number"/>
-                            <p class="help-block text-danger"></p>
+                            
                         </div>
+                        <p class="help-block text-danger"></p>
                     </div>
                         <div class="form-group row">
                         <label for="lookingfor" class="col-sm-5 control-form-label">
@@ -552,13 +566,14 @@ A reason people houseclean is to be able to see parts of the floor and furniture
                         </div>
                     </div>
   <p>By Clicking on 'Submit' button, you are agreeing to the House2Home <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+   <div class="modal-footer">
+           <input type="submit" value="Submit" class="btn btn-success" id="registration" />
+           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
 
                                   </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
+         
         </div>
       </div>
     </div>
