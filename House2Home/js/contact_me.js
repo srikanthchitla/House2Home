@@ -1,6 +1,6 @@
 $(function() {
 
-  $("#data input,#data select,#reg-validation input,#user-login-validation input,#emp-login-validation input").jqBootstrapValidation({
+  $("#data input,#data select,#reg-validation input,#user-login-validation input,#emp-login-validation input,#forgot-validaion input").jqBootstrapValidation({
     preventSubmit: true,
     submitError: function($form, event, errors) {
       // additional error messages or events

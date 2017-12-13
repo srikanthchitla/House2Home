@@ -634,20 +634,20 @@ this at low prices.
             </button>
           </div>
           <div class="modal-body">
-            <form  role="form" class="form-horizontal" action="userRegister" method="post" modelAttribute="customerreg">
-
-                    <div class="form-group row">
-                        <label for="email" class="col-sm-2 control-form-label">
-                            Email</label>
-                        <div class="col-sm-9">
-                            <input type="email" class="form-control" id="email" placeholder="Email" required="required"  name="email"/>
-                        </div>
-                    </div>
-                   </form>
+            <form  role="form" id="forgot-validaion" class="form-horizontal" novalidate>
+              <div class="form-group row">
+                  <label for="email" class="col-sm-2 control-form-label">
+                      Email</label>
+                  <div class="col-sm-9">
+                      <input type="email" class="form-control" placeholder="Email" name="email" required data-validation-required-message="Please enter mail id"/>
+                  </div>
+                   <p class="help-block text-danger"></p>
+              </div>
+            </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary" data-toggle="modal"  data-target="#notify" data-dismiss="modal">Submit</button>
+            <input type="submit" value="Submit" class="btn btn-success"/>
           </div>
         </div>
       </div>

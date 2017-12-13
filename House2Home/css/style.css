@@ -104,3 +104,6 @@ font-size: 17px;
     background-color: #4aab91;
     border-color: #ddd #ddd #fff;
 }
+#mainNav{
+  background-image: url(../img/dashboard/customer-header1.png);
+}
